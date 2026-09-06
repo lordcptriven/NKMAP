@@ -59,8 +59,8 @@ protected:
 	BOOL				m_bAdd;
 	BOOL				m_bDeselect;
 	int					m_nMouseX, m_nMouseY;			// Screen coordinate of mouse
-	D3DXVECTOR3			m_vMouseDrag1, m_vMouseDrag2;	//ulyssesme-20060928 : ï¿½å·¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-	D3DXVECTOR3			m_vMouseDrag3, m_vMouseDrag4;	//ulyssesme-20060928 : ï¿½å·¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	D3DXVECTOR3			m_vMouseDrag1, m_vMouseDrag2;	//ulyssesme-20060928 : µå·¡±× ½ÃÀÛÁöÁ¡
+	D3DXVECTOR3			m_vMouseDrag3, m_vMouseDrag4;	//ulyssesme-20060928 : µå·¡±× ³¡ÁöÁ¡
 	DWORD				m_dwBgColor;					// Backgroung color
 	int					m_nTileSX, m_nTileEX;			// X region of working tiles
 	int					m_nTileSZ, m_nTileEZ;			// Z region of working tiles
@@ -81,7 +81,7 @@ protected:
 	// Terrain
 	CNKTerrain*			m_pTerrain;						// CNKTerrain pointer
 	BOOL				m_bShowTerrain;					// If a terrain is shown
-	BOOL				m_bShowAttr_Map;				// nate 2006-01-12 : ï¿½Ó¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì±ï¿½
+	BOOL				m_bShowAttr_Map;				// nate 2006-01-12 : ¼Ó¼º¸Ê º¸ÀÌ±â
 	int					m_nGridSize;					// Grid size
 	DWORD				m_dwGridColor;					// Grid color
 
@@ -123,7 +123,7 @@ protected:
 	BOOL				m_bPlaceRandomRotation;			// Placing with random rotation angle
 	float				m_fObjMinXZ;					// Minimum x & z of decoobj that can be located
 	float				m_fObjMaxXZ;					// Maximum x & z of decoobj that can be located
-	BOOL				m_bShowLocalAxis;               // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½×½Ã½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã¼Å© ï¿½ï¿½ï¿½ï¿½.
+	BOOL				m_bShowLocalAxis;               // ¿ÀºêÁ§Æ®ÀÇ ¾×½Ã½º¸¦ º¸¿©ÁÙ¶§ »ó´ëÃàÀ¸·Î º¸¿©ÁÙÁö¿¡ ´ëÇÑ Ã¼Å© ¿©ºÎ.
 
 	// Terrain vertex editing
 	int					m_nControlUnit;					// Control unit for editing vertex ( 0: tile, 1: vertex )
@@ -346,7 +346,7 @@ public:
 	void	RemoveDecoObjsFromSelList( int nIndex );	
 	void	MoveSelDecoObjs( float fdX, float fdY, float fdZ );
 	void	RotateSelDecoObjs( float fdDeg, BOOL bSnap = FALSE );
-	void	RotateSelDecoObjsByPivot( float fdDeg, D3DVECTOR Pivot ); // Æ¯ï¿½ï¿½ï¿½ï¿½Ç¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½Ô¼ï¿½. 06-09-12 ï¿½ï¿½ï¿½ï¿½ (Yï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
+	void	RotateSelDecoObjsByPivot( float fdDeg, D3DVECTOR Pivot ); // Æ¯Á¤ÁÂÇ¥¸¦ ±âÁØÀ¸·Î È¸Àü½ÃÄÑÁÖ´Â ÇÔ¼ö. 06-09-12 ¿ø¼® (Y´Â ¹«½Ã)
 	void	UpdateChangedDecoObjs();
 	void	SetRandomRotation( BOOL bRandomRotation );
 	void	AlignDecoObjs( int nAxis );
@@ -396,20 +396,20 @@ public:
 	IndexedTexture*	GetDecoTexture() const;
 	LPDIRECT3DDEVICE7	GetD3DDevice() const;
 
-	float m_fCameraSpeed; // Ä«ï¿½Þ¶ï¿½ ï¿½ï¿½ï¿½Çµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ È®ï¿½ï¿½(by ï¿½ï¿½ï¿½ï¿½)
-	float m_bCameraUnlimit; // Ä«ï¿½Þ¶ï¿½ ï¿½Ã¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ö´ï¿½ Ã¼Å© ï¿½ï¿½ï¿½. ///071022 ï¿½ß°ï¿½
+	float m_fCameraSpeed; // Ä«¸Þ¶ó ½ºÇÇµå Á¶Àý ±â´É È®Àå(by ¿ø¼®)
+	float m_bCameraUnlimit; // Ä«¸Þ¶ó ½Ã¾ßÁ¦ÇÑÀ» ¾ø¾Ö´Â Ã¼Å© ±â´É. ///071022 Ãß°¡
 
 	CMyNKApp();
 	~CMyNKApp();
 	LRESULT	MsgProc( UINT uMsg, WPARAM wParam, LPARAM lParam );
 	
-	// [10/26/2007 Theodoric] Undoï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ ï¿½Ô¼ï¿½
+	// [10/26/2007 Theodoric] Undo¸¦ À§ÇÑ Ãß°¡ ÇÔ¼ö
 
 	CUndoObject m_UndoObj;
 	void	MoveAndRotateSelDecoObjs( CDecoObj* pDecoObj, float fdX, float fdY, float fdZ, float fdir );
 	int		GetCurDecoObj(){return m_nCurDecoObj;}
 
-	// [2007/11/1 theodoric] Ä«ï¿½Þ¶ï¿½ Å¾ï¿½ï¿½
+	// [2007/11/1 theodoric] Ä«¸Þ¶ó Å¾ºä
 	BOOL		m_bCameraUnlimitBack;
 	CNKCamera*	GetCamera(){return m_pCamera;}
 	BOOL		IsCameraTopView(){ return m_pCamera->IsTopView();}

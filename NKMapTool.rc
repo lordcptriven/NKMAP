@@ -1,0 +1,1131 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\NKMapTool.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TOOL_TEXTURE_PAINT DIALOG DISCARDABLE  0, 0, 115, 406
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         147,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,0,0,
+                    115,29
+    GROUPBOX        " Texture List ",IDC_STATIC,0,29,115,163,BS_FLAT
+    LISTBOX         IDC_TOOL_PAINT_LISTBOX,4,40,107,132,
+                    LBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "New",IDC_TOOL_PAINT_NEW,20,174,30,13
+    PUSHBUTTON      "Replace",IDC_TOOL_PAINT_REPLACE,50,174,30,13
+    PUSHBUTTON      "Delete",IDC_TOOL_PAINT_DELETE,80,174,30,13
+    GROUPBOX        " Layers ",IDC_STATIC,0,198,115,75,BS_FLAT | WS_GROUP
+    CONTROL         "Layer 1",IDC_TOOL_PAINT_LAYER1,"Button",
+                    BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE | BS_FLAT | 
+                    WS_GROUP,22,243,85,15
+    CONTROL         "Layer 2",IDC_TOOL_PAINT_LAYER2,"Button",
+                    BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE | BS_FLAT,
+                    22,226,85,15
+    CONTROL         "Layer 3",IDC_TOOL_PAINT_LAYER3,"Button",
+                    BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE | BS_FLAT,
+                    22,209,85,15
+    CONTROL         "",IDC_TOOL_PAINT_SHOW_LAYER1,"Button",BS_AUTOCHECKBOX | 
+                    BS_BITMAP | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,8,243,13,
+                    15
+    CONTROL         "",IDC_TOOL_PAINT_SHOW_LAYER2,"Button",BS_AUTOCHECKBOX | 
+                    BS_BITMAP | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,8,226,13,
+                    15
+    CONTROL         "",IDC_TOOL_PAINT_SHOW_LAYER3,"Button",BS_AUTOCHECKBOX | 
+                    BS_BITMAP | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,8,209,13,
+                    15
+    CONTROL         "Texture filtering",IDC_TOOL_PAINT_FILTER,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,11,260,92,10
+    GROUPBOX        " Edit Type ",IDC_STATIC,0,279,115,32,BS_FLAT | WS_GROUP
+    CONTROL         "",IDC_TOOL_PAINT_TYPE_P,"Button",BS_AUTORADIOBUTTON | 
+                    BS_BITMAP | BS_PUSHLIKE | BS_FLAT | WS_GROUP,5,291,50,15
+    CONTROL         "",IDC_TOOL_PAINT_TYPE_E,"Button",BS_AUTORADIOBUTTON | 
+                    BS_BITMAP | BS_PUSHLIKE | BS_FLAT,60,291,50,15
+    GROUPBOX        " Edit Tool Property ",IDC_STATIC,0,317,115,79,BS_FLAT
+    LTEXT           "Type",IDC_STATIC,8,331,19,10
+    CONTROL         "",IDC_TOOL_PAINT_TOOL_TYPE,"Button",BS_AUTOCHECKBOX | 
+                    BS_BITMAP | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,41,328,63,
+                    15
+    LTEXT           "Size (1~16)",IDC_STATIC,8,349,41,10
+    EDITTEXT        IDC_TOOL_PAINT_SIZE_EDIT,79,347,25,12,ES_NUMBER
+    CONTROL         "Slider1",IDC_TOOL_PAINT_SIZE_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,2,358,110,11
+    LTEXT           "Strength (1~100)",IDC_STATIC,8,374,56,10
+    EDITTEXT        IDC_TOOL_PAINT_STRENGTH_EDIT,79,372,25,12,ES_NUMBER
+    CONTROL         "Slider1",IDC_TOOL_PAINT_STRENGTH_SLIDER,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,
+                    2,383,110,11
+END
+
+IDD_MYFILEDLG DIALOGEX 0, 0, 256, 175
+STYLE WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_FRAME,0,0,256,104,NOT WS_VISIBLE
+    LTEXT           "",IDC_FILE_PREVIEW,88,106,67,66,0,WS_EX_STATICEDGE
+    LTEXT           "",IDC_FILE_PREVIEW_INFO,159,160,94,10
+END
+
+IDD_FILE_NEWTERRAIN DIALOGEX 0, 0, 207, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION " Create New Terrain"
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,4,0,199,82,BS_FLAT
+    LTEXT           "Name",IDC_STATIC,12,13,22,10
+    EDITTEXT        IDC_NEWTERRAIN_NAME,41,11,57,12,ES_AUTOHSCROLL
+    LTEXT           "W/H Segment",IDC_STATIC,108,13,48,10
+    COMBOBOX        IDC_NEWTERRAIN_WHSEGMENT,160,11,34,71,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Patch Size",IDC_STATIC,12,30,38,10
+    EDITTEXT        IDC_NEWTERRAIN_PATCHSIZE,57,28,41,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Height Scale",IDC_STATIC,108,30,43,10
+    EDITTEXT        IDC_NEWTERRAIN_HEIGHTSCALE,156,28,38,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Base Texture",IDC_STATIC,12,47,46,10
+    EDITTEXT        IDC_NEWTERRAIN_BASETEXNAME,63,46,121,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "..",IDC_NEWTERRAIN_OPENTEX,183,46,11,12
+    LTEXT           "Height Map",IDC_STATIC,12,64,40,10
+    EDITTEXT        IDC_NEWTERRAIN_HMNAME,55,62,129,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "..",IDC_NEWTERRAIN_OPENHM,183,62,11,12
+    PUSHBUTTON      "Generate",IDC_NEWTERRAIN_GENERATE,29,89,65,13
+    PUSHBUTTON      "Cancel",IDCANCEL,112,89,65,13
+END
+
+IDD_TOOL_VERTEX_EDIT DIALOG DISCARDABLE  0, 0, 115, 387
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         146,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,0,0,
+                    115,29
+    GROUPBOX        " Terrain Information ",IDC_STATIC,0,29,115,89,BS_FLAT
+    LTEXT           "Name",IDC_STATIC,6,42,24,10
+    EDITTEXT        IDC_TOOL_VERTEX_NAME,33,40,76,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Segment",IDC_STATIC,6,57,35,10
+    EDITTEXT        IDC_TOOL_VERTEX_SEGMENT,43,55,66,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Patch Size",IDC_STATIC,6,72,40,10
+    EDITTEXT        IDC_TOOL_VERTEX_PATCHSIZE,49,70,49,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    PUSHBUTTON      "m",IDC_TOOL_VERTEX_PATCHSIZE_MODIFY,98,70,11,12
+    LTEXT           "Height Scale",IDC_STATIC,6,87,45,10
+    EDITTEXT        IDC_TOOL_VERTEX_HEIGHTSCALE,54,85,44,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    PUSHBUTTON      "m",IDC_TOOL_VERTEX_HEIGHTSCALE_MODIFY,98,85,11,12
+    LTEXT           "Min/Max Height",IDC_STATIC,6,102,55,10
+    EDITTEXT        IDC_TOOL_VERTEX_MINMAXHEIGHT,63,100,46,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        " Modify Partial Terrain ",IDC_STATIC,0,124,115,172,
+                    BS_FLAT
+    GROUPBOX        " Control Unit ",IDC_STATIC,4,136,107,32,BS_FLAT | 
+                    WS_GROUP
+    CONTROL         "",IDC_TOOL_VERTEX_CONTROL_TILE,"Button",
+                    BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE | BS_FLAT | 
+                    WS_GROUP,9,148,46,15
+    CONTROL         "",IDC_TOOL_VERTEX_CONTROL_VERTEX,"Button",
+                    BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE | BS_FLAT,
+                    60,148,46,15
+    GROUPBOX        " Edit Type ",IDC_STATIC,4,174,107,50,BS_FLAT | WS_GROUP
+    CONTROL         "",IDC_TOOL_VERTEX_RAISE,"Button",BS_AUTORADIOBUTTON | 
+                    BS_BITMAP | BS_PUSHLIKE | BS_FLAT | WS_GROUP,9,186,46,15
+    CONTROL         "",IDC_TOOL_VERTEX_LOWER,"Button",BS_AUTORADIOBUTTON | 
+                    BS_BITMAP | BS_PUSHLIKE | BS_FLAT,60,186,46,15
+    CONTROL         "",IDC_TOOL_VERTEX_FLATTEN,"Button",BS_AUTORADIOBUTTON | 
+                    BS_BITMAP | BS_PUSHLIKE | BS_FLAT,9,204,46,15
+    CONTROL         "",IDC_TOOL_VERTEX_SMOOTH,"Button",BS_AUTORADIOBUTTON | 
+                    BS_BITMAP | BS_PUSHLIKE | BS_FLAT,60,204,46,15
+    GROUPBOX        " Edit Tool Property ",IDC_STATIC,4,230,107,61,BS_FLAT
+    LTEXT           "Size (1~8)",IDC_STATIC,10,243,37,10
+    EDITTEXT        IDC_TOOL_VERTEX_BRUSH_SIZE_EDIT,81,241,25,12,
+                    ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_TOOL_VERTEX_BRUSH_SIZE_SLIDER,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,
+                    5,252,105,11
+    LTEXT           "Strength (1~100)",IDC_STATIC,10,268,52,10
+    EDITTEXT        IDC_TOOL_VERTEX_BRUSH_STRENGTH_EDIT,81,266,25,12,
+                    ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_TOOL_VERTEX_BRUSH_STRENGTH_SLIDER,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,
+                    5,277,105,11
+    GROUPBOX        " Modify Entire Terrain ",IDC_STATIC,0,302,115,78,
+                    BS_FLAT
+    PUSHBUTTON      "Import Height Map",IDC_TOOL_VERTEX_HEIGHTMAP_REAPPLY,6,
+                    314,103,12
+    PUSHBUTTON      "Export Height Map",IDC_TOOL_VERTEX_HEIGHTMAP_EXPORT,6,
+                    327,103,12
+    LTEXT           "Offset",IDC_STATIC,7,353,20,10
+    EDITTEXT        IDC_TOOL_VERTEX_OFFSET,28,351,28,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "",IDC_TOOL_VERTEX_RAISE_ENTIRE,63,342,46,15,BS_BITMAP
+    PUSHBUTTON      "",IDC_TOOL_VERTEX_LOWER_ENTIRE,63,358,46,15,BS_BITMAP
+END
+
+IDD_TOOL_OBJECT_EDIT DIALOG DISCARDABLE  0, 0, 115, 593
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         148,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,0,0,
+                    115,29
+    GROUPBOX        " Object List ",IDC_STATIC,0,29,115,275,BS_FLAT
+    LISTBOX         IDC_TOOL_OBJECT_LISTBOX,4,40,107,130,
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        " Object Information ",IDC_STATIC,4,175,107,93,BS_FLAT
+    LTEXT           "Index",IDC_STATIC,10,189,20,10
+    EDITTEXT        IDC_TOOL_OBJECT_INDEX,33,187,72,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Type",IDC_STATIC,10,205,19,10
+    COMBOBOX        IDC_TOOL_OBJECT_TYPE,33,202,72,85,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Name",IDC_STATIC,10,221,19,10
+    EDITTEXT        IDC_TOOL_OBJECT_NAME,33,219,72,12
+    LTEXT           "LOLO",IDC_STATIC,10,237,20,10
+    EDITTEXT        IDC_TOOL_OBJECT_LOLO,33,235,62,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "..",IDC_TOOL_OBJECT_OPENLOLO,95,235,10,12
+    LTEXT           "Reference Count",IDC_STATIC,10,253,55,10
+    EDITTEXT        IDC_TOOL_OBJECT_REFERENCE,68,251,37,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    PUSHBUTTON      "Insert",IDC_TOOL_OBJECT_INSERT,14,270,32,13
+    PUSHBUTTON      "Modify",IDC_TOOL_OBJECT_MODIFY,46,270,32,13
+    PUSHBUTTON      "Remove",IDC_TOOL_OBJECT_REMOVE,78,270,32,13
+    PUSHBUTTON      "Import Bld, Lst Files",IDC_TOOL_OBJECT_IMPORT,14,285,96,
+                    13
+    GROUPBOX        " Work Type ",IDC_STATIC,0,310,115,50,BS_FLAT | WS_GROUP
+    CONTROL         "Select",IDC_TOOL_OBJECT_SELECT,"Button",
+                    BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE | BS_FLAT | 
+                    WS_GROUP,5,322,50,15
+    CONTROL         "Place",IDC_TOOL_OBJECT_PLACE,"Button",
+                    BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE | BS_FLAT,
+                    59,322,50,15
+    CONTROL         "Move",IDC_TOOL_OBJECT_MOVE,"Button",BS_AUTORADIOBUTTON | 
+                    BS_BITMAP | BS_PUSHLIKE | BS_FLAT,5,340,50,15
+    CONTROL         "Rotate",IDC_TOOL_OBJECT_ROTATE,"Button",
+                    BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE | BS_FLAT,
+                    59,340,50,15
+    GROUPBOX        " Parameters ",IDC_STATIC,0,366,115,75,BS_FLAT | 
+                    WS_GROUP
+    LTEXT           "World X",IDC_STATIC,6,380,30,10
+    EDITTEXT        IDC_TOOL_OBJECT_X_EDIT,49,378,60,12
+    LTEXT           "World Y",IDC_STATIC,6,395,30,10
+    EDITTEXT        IDC_TOOL_OBJECT_Y_EDIT,49,392,60,12
+    LTEXT           "World Z",IDC_STATIC,6,410,30,10
+    EDITTEXT        IDC_TOOL_OBJECT_Z_EDIT,49,408,60,12
+    LTEXT           "Rotation (Degree)",IDC_STATIC,6,425,57,10
+    EDITTEXT        IDC_TOOL_OBJECT_ROTATE_EDIT,71,423,38,12
+    GROUPBOX        " Helpers ",IDC_STATIC,0,447,115,129,BS_FLAT
+    CONTROL         "Random rotation",IDC_TOOL_OBJECT_RANDOM,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,6,459,67,10
+    CONTROL         "Bounds of a object group",IDC_TOOL_OBJECT_NODEBOUND,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,6,471,94,
+                    10
+    LTEXT           "Offset",IDC_STATIC,6,489,20,9
+    EDITTEXT        IDC_TOOL_OBJECT_OFFSET,28,487,26,12,ES_AUTOHSCROLL
+    LTEXT           "Count",IDC_STATIC,62,489,19,9
+    EDITTEXT        IDC_TOOL_OBJECT_COUNT,84,487,25,12,ES_AUTOHSCROLL
+    CTEXT           "Axis",IDC_STATIC,14,507,21,9
+    CONTROL         "X",IDC_TOOL_OBJECT_AXIS_X,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT | WS_GROUP,42,511,16,10
+    CONTROL         "Y",IDC_TOOL_OBJECT_AXIS_Y,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,65,511,15,10
+    CONTROL         "Z",IDC_TOOL_OBJECT_AXIS_Z,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,87,511,16,10
+    PUSHBUTTON      "Align",IDC_TOOL_OBJECT_ALIGN,7,530,50,15,BS_BITMAP
+    PUSHBUTTON      "Array",IDC_TOOL_OBJECT_ARRAY,60,530,50,15,BS_BITMAP
+    PUSHBUTTON      "Remove objects in the region",
+                    IDC_TOOL_OBJECT_REMOVE_INREGION,7,554,103,13
+    CONTROL         "Local",IDC_CHECK_LOCALAXIS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,516,31,9
+END
+
+IDD_TOOL_ATTMAP_EDIT DIALOG DISCARDABLE  0, 0, 115, 335
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         150,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,0,0,
+                    115,29
+    GROUPBOX        " Map Attribute ",IDC_STATIC,0,29,115,125,BS_FLAT | 
+                    WS_GROUP
+    CONTROL         "Able to walk",IDC_TOOL_ATTMAP_ABLETOWALK,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP,26,43,79,13
+    CONTROL         "Unable to walk",IDC_TOOL_ATTMAP_UNABLETOWALK,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,26,61,79,13
+    CONTROL         "Water",IDC_TOOL_ATTMAP_WATER,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,26,79,79,13
+    CONTROL         "Indoor",IDC_TOOL_ATTMAP_INDOOR,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,26,97,79,13
+    CONTROL         "Indoor box",IDC_TOOL_ATTMAP_INDOORBOX,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,26,115,79,13
+    CONTROL         "Outdoor box",IDC_TOOL_ATTMAP_OUTDOORBOX,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,26,133,79,13
+    LTEXT           "",IDC_TOOL_ATTMAP_ABLETOWALK_COLOR,8,42,12,14,NOT 
+                    WS_GROUP
+    CONTROL         "",IDC_TOOL_ATTMAP_UNABLETOWALK_COLOR,"Static",
+                    SS_GRAYRECT | SS_NOTIFY,8,60,12,14
+    CONTROL         "",IDC_TOOL_ATTMAP_WATER_COLOR,"Static",SS_GRAYRECT | 
+                    SS_NOTIFY,8,78,12,14
+    CONTROL         "",IDC_TOOL_ATTMAP_INDOOR_COLOR,"Static",SS_GRAYRECT | 
+                    SS_NOTIFY,8,96,12,14
+    CONTROL         "",IDC_TOOL_ATTMAP_INDOORBOX_COLOR,"Static",SS_GRAYRECT | 
+                    SS_NOTIFY,8,114,12,14
+    CONTROL         "",IDC_TOOL_ATTMAP_OUTDOORBOX_COLOR,"Static",SS_GRAYRECT | 
+                    SS_NOTIFY,8,132,12,14
+    GROUPBOX        " Helpers ",IDC_STATIC,0,160,115,122,BS_FLAT
+    LTEXT           "Visible Range",IDC_STATIC,6,174,47,10
+    EDITTEXT        IDC_TOOL_ATTMAP_RANGE,60,172,42,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Spin1",IDC_TOOL_ATTMAP_RANGE_SPIN,"msctls_updown32",
+                    UDS_ARROWKEYS,102,172,8,12
+    PUSHBUTTON      "Generate Attribute Map",IDC_TOOL_ATTMAP_GENERATE,6,219,
+                    104,13
+    PUSHBUTTON      "Import Server Attribute Map",IDC_TOOL_ATTMAP_IMPORT,6,
+                    241,104,13
+    PUSHBUTTON      "Export Server Attribute Map",IDC_TOOL_ATTMAP_EXPORT,6,
+                    260,104,13
+    CONTROL         "Slider1",IDC_TOOL_ATTMAP_BRUSH_SIZE_SLIDER,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,
+                    3,201,109,11
+    LTEXT           "Size",IDC_STATIC,6,191,15,8
+    EDITTEXT        IDC_TOOL_ATTMAP_BRUSH_SIZE_EDIT,83,190,25,12,ES_READONLY | 
+                    ES_NUMBER
+END
+
+IDD_TOOL_LIGHT_EDIT DIALOG DISCARDABLE  0, 0, 115, 433
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,0,0,
+                    115,29
+    GROUPBOX        " Directional Light ",IDC_STATIC,0,29,115,187,BS_FLAT
+    LTEXT           "World Time",IDC_STATIC,6,44,38,10
+    COMBOBOX        IDC_TOOL_LIGHT_TIME,47,42,62,81,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        " Light Direction ",IDC_STATIC,4,60,107,55,BS_FLAT
+    CONTROL         "",IDC_TOOL_LIGHT_DIRCONTROL,"Button",BS_AUTOCHECKBOX | 
+                    BS_BITMAP | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,12,76,25,
+                    31
+    LTEXT           "X",IDC_STATIC,47,76,8,8
+    EDITTEXT        IDC_TOOL_LIGHT_DIRX,57,74,48,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Y",IDC_STATIC,47,88,8,8
+    EDITTEXT        IDC_TOOL_LIGHT_DIRY,57,86,48,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Z",IDC_STATIC,47,100,8,8
+    EDITTEXT        IDC_TOOL_LIGHT_DIRZ,57,98,48,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        " Light Color ",IDC_STATIC,4,121,107,33,BS_FLAT
+    CONTROL         "",IDC_TOOL_LIGHT_LIGHTCOLOR,"Static",SS_WHITERECT | 
+                    SS_NOTIFY,11,134,12,14
+    LTEXT           "R",IDC_STATIC,28,137,8,8
+    EDITTEXT        IDC_TOOL_LIGHT_LIGHTR_EDIT,36,135,15,12,ES_READONLY | 
+                    ES_NUMBER
+    LTEXT           "G",IDC_STATIC,55,137,8,8
+    EDITTEXT        IDC_TOOL_LIGHT_LIGHTG_EDIT,63,135,15,12,ES_READONLY | 
+                    ES_NUMBER
+    LTEXT           "B",IDC_STATIC,82,137,8,8
+    EDITTEXT        IDC_TOOL_LIGHT_LIGHTB_EDIT,90,135,15,12,ES_READONLY | 
+                    ES_NUMBER
+    GROUPBOX        " Ambient Color ",IDC_STATIC,4,160,107,33,BS_FLAT
+    CONTROL         "",IDC_TOOL_LIGHT_AMBIENTCOLOR,"Static",SS_GRAYRECT | 
+                    SS_NOTIFY,11,173,12,14
+    LTEXT           "R",IDC_STATIC,28,176,8,8
+    EDITTEXT        IDC_TOOL_LIGHT_AMBIENTR_EDIT,36,174,15,12,ES_READONLY | 
+                    ES_NUMBER
+    LTEXT           "G",IDC_STATIC,55,176,8,8
+    EDITTEXT        IDC_TOOL_LIGHT_AMBIENTG_EDIT,63,174,15,12,ES_READONLY | 
+                    ES_NUMBER
+    LTEXT           "B",IDC_STATIC,82,176,8,8
+    EDITTEXT        IDC_TOOL_LIGHT_AMBIENTB_EDIT,90,174,15,12,ES_READONLY | 
+                    ES_NUMBER
+    GROUPBOX        " Shadow ",IDC_STATIC,0,222,115,203,BS_FLAT
+    GROUPBOX        " Edit Type ",IDC_STATIC,4,234,107,47,BS_FLAT | WS_GROUP
+    CONTROL         "",IDC_TOOL_LIGHT_PAINT,"Button",BS_AUTORADIOBUTTON | 
+                    BS_BITMAP | BS_PUSHLIKE | BS_FLAT | WS_GROUP,9,246,46,15
+    CONTROL         "",IDC_TOOL_LIGHT_ERASE,"Button",BS_AUTORADIOBUTTON | 
+                    BS_BITMAP | BS_PUSHLIKE | BS_FLAT,60,246,46,15
+    CONTROL         "Only apply to a current map",
+                    IDC_TOOL_LIGHT_SHADOW_CURMAP,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,10,265,98,10
+    GROUPBOX        " Shadow Color ",IDC_STATIC,4,286,107,33,BS_FLAT
+    CONTROL         "",IDC_TOOL_LIGHT_SHADOWCOLOR,"Static",SS_BLACKRECT | 
+                    SS_NOTIFY,11,299,12,14
+    LTEXT           "R",IDC_STATIC,28,302,8,8
+    EDITTEXT        IDC_TOOL_LIGHT_SHADOWR_EDIT,36,300,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "G",IDC_STATIC,55,302,8,8
+    EDITTEXT        IDC_TOOL_LIGHT_SHADOWG_EDIT,63,300,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "B",IDC_STATIC,82,302,8,8
+    EDITTEXT        IDC_TOOL_LIGHT_SHADOWB_EDIT,90,300,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        " Edit Tool Property",IDC_STATIC,4,324,107,61,BS_FLAT
+    LTEXT           "Size (1~16)",IDC_STATIC,9,338,41,10
+    EDITTEXT        IDC_TOOL_LIGHT_BRUSH_SIZE_EDIT,81,336,25,12,
+                    ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_TOOL_LIGHT_BRUSH_SIZE_SLIDER,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,
+                    5,347,105,11
+    LTEXT           "Strength (1~100)",IDC_STATIC,9,363,56,10
+    EDITTEXT        IDC_TOOL_LIGHT_BRUSH_STRENGTH_EDIT,81,361,25,12,
+                    ES_AUTOHSCROLL
+    CONTROL         "Slider2",IDC_TOOL_LIGHT_BRUSH_STRENGTH_SLIDER,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,
+                    5,372,105,11
+    PUSHBUTTON      "Import shadow map",IDC_TOOL_LIGHT_SHADOW_IMPORT,6,392,
+                    104,13
+    PUSHBUTTON      "Export shadow map",IDC_TOOL_LIGHT_SHADOW_EXPORT,6,406,
+                    104,13
+    PUSHBUTTON      "Default Setting",IDC_TOOL_LIGHT_DEFAULT,54,199,57,13
+END
+
+IDD_PROGRESSDLG DIALOGEX 0, 0, 192, 76
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION " NKMapTool"
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS_CTRL,"msctls_progress32",
+                    PBS_SMOOTH | WS_BORDER,25,46,163,24
+    GROUPBOX        " Title ",IDC_PROGRESS_TITLE,5,5,183,36,BS_FLAT
+    CONTROL         184,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,5,
+                    46,19,23
+    LTEXT           "Content",IDC_PROGRESS_CONTENT,11,17,171,20
+END
+
+IDD_TOOL_ATMOS_EDIT DIALOG DISCARDABLE  0, 0, 115, 496
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         189,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,0,0,
+                    115,29
+    GROUPBOX        " Water ",IDC_STATIC,0,29,115,323,BS_FLAT
+    LTEXT           "Base Texture",IDC_STATIC,6,42,43,10
+    EDITTEXT        IDC_TOOL_ATMOS_WATER_BASE_TEXNAME,22,52,76,12,
+                    ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "..",IDC_TOOL_ATMOS_WATER_BASE_TEXNAME_OPEN,98,52,11,12
+    LTEXT           "Wave Texture",IDC_STATIC,6,68,43,10
+    LTEXT           "1",IDC_STATIC,11,80,8,12
+    EDITTEXT        IDC_TOOL_ATMOS_WATER_WAVE_TEXNAME,22,78,76,12,
+                    ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "..",IDC_TOOL_ATMOS_WATER_WAVE_TEXNAME_OPEN,98,78,11,12
+    LTEXT           "2",IDC_STATIC,11,94,8,12
+    EDITTEXT        IDC_TOOL_ATMOS_WATER_WAVE_TEXNAME2,22,92,76,12,
+                    ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "..",IDC_TOOL_ATMOS_WATER_WAVE_TEXNAME_OPEN2,98,92,11,12
+    LTEXT           "Water Opacity",IDC_STATIC,6,110,47,10
+    EDITTEXT        IDC_TOOL_ATMOS_WATER_OPACITY,59,108,41,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_TOOL_ATMOS_WATER_OPACITY_SPIN,
+                    "msctls_updown32",UDS_ARROWKEYS,100,108,8,12
+    GROUPBOX        " Water Property ",IDC_STATIC,4,127,107,127,BS_FLAT
+    LTEXT           "Group",IDC_STATIC,10,140,22,10
+    COMBOBOX        IDC_TOOL_ATMOS_WATER_GROUP,36,138,70,61,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_TOOL_ATMOS_WATER_GROUP_ADD,11,154,32,13
+    PUSHBUTTON      "Modify",IDC_TOOL_ATMOS_WATER_GROUP_MODIFY,43,154,32,13
+    PUSHBUTTON      "Remove",IDC_TOOL_ATMOS_WATER_GROUP_REMOVE,74,154,32,13
+    LTEXT           "Group Name",IDC_STATIC,10,173,41,10
+    EDITTEXT        IDC_TOOL_ATMOS_WATER_GROUP_NAME,59,171,47,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "Height",IDC_STATIC,10,188,22,10
+    EDITTEXT        IDC_TOOL_ATMOS_WATER_HEIGHT,59,186,47,12,ES_AUTOHSCROLL
+    LTEXT           "Segment",IDC_STATIC,10,203,31,10
+    EDITTEXT        IDC_TOOL_ATMOS_WATER_SEGMENT,59,201,39,12,ES_AUTOHSCROLL
+    CONTROL         "Spin4",IDC_TOOL_ATMOS_WATER_SEGMENT_SPIN,
+                    "msctls_updown32",UDS_ARROWKEYS,98,201,8,12
+    PUSHBUTTON      "Paint all base water",IDC_TOOL_ATMOS_WATER_PAINT_ALL,10,
+                    218,95,15
+    PUSHBUTTON      "Paint all wave water",
+                    IDC_TOOL_ATMOS_WATER_PAINT_ALLWAVE,10,234,95,15,
+                    WS_DISABLED
+    GROUPBOX        " Water Type ",IDC_STATIC,4,260,107,32,BS_FLAT | 
+                    WS_GROUP
+    CONTROL         "Base",IDC_TOOL_ATMOS_WATER_TYPE_BASE,"Button",
+                    BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE | BS_FLAT | 
+                    WS_GROUP,9,272,46,15
+    CONTROL         "Wave",IDC_TOOL_ATMOS_WATER_TYPE_WAVE,"Button",
+                    BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE | BS_FLAT,
+                    60,272,46,15
+    GROUPBOX        " Edit Type ",IDC_STATIC,4,298,107,32,BS_FLAT | WS_GROUP
+    CONTROL         "Paint",IDC_TOOL_ATMOS_WATER_EDIT_PAINT,"Button",
+                    BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE | BS_FLAT | 
+                    WS_GROUP,9,310,46,15
+    CONTROL         "Erase",IDC_TOOL_ATMOS_WATER_EDIT_ERASE,"Button",
+                    BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE | BS_FLAT,
+                    60,310,46,15
+    CONTROL         "Show guide lines",IDC_TOOL_ATMOS_WATER_GUIDE_LINE,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,6,335,88,
+                    10
+    GROUPBOX        " Sky ",IDC_STATIC,0,370,115,54,BS_FLAT
+    GROUPBOX        " Fog ",IDC_STATIC,0,436,115,44,BS_FLAT
+END
+
+IDD_TOOL_MAPMOVE DIALOGEX 0, 0, 110, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION " Map Movement"
+FONT 10, "Microsoft Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        " Coordinate ",IDC_STATIC,5,42,100,27,BS_FLAT
+    LTEXT           "X",IDC_STATIC,12,54,8,10
+    EDITTEXT        IDC_TOOL_MAPMOVE_X,22,53,30,12,ES_AUTOHSCROLL
+    LTEXT           "Z",IDC_STATIC,59,54,8,10
+    EDITTEXT        IDC_TOOL_MAPMOVE_Z,69,53,30,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,5,75,48,12
+    PUSHBUTTON      "Cancel",IDCANCEL,57,75,48,12
+    GROUPBOX        " Movement Unit ",IDC_STATIC,5,3,100,34,BS_FLAT | 
+                    WS_GROUP
+    CONTROL         "Tile Coordinate",IDC_TOOL_MAPMOVE_TILE,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP,12,13,70,9
+    CONTROL         "World Coordinate",IDC_TOOL_MAPMOVE_WORLD,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,12,24,70,9
+END
+
+IDD_FILE_MERGE_MAPS DIALOGEX 0, 0, 145, 125
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION " Merge Maps "
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        " Merge Information ",IDC_STATIC,4,4,136,98,BS_FLAT
+    LTEXT           "Nmf File",IDC_STATIC,12,20,27,10
+    EDITTEXT        IDC_MERGEMAP_NMF_NAME,42,18,80,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "..",IDC_MERGEMAP_NMF_OPEN,122,17,11,12
+    LTEXT           "Not File",IDC_STATIC,12,35,27,10
+    EDITTEXT        IDC_MERGEMAP_NOT_NAME,42,33,80,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "..",IDC_MERGEMAP_NOT_OPEN,122,33,11,12
+    GROUPBOX        " Region( Tile Coordinate ) ",IDC_STATIC,10,50,125,46,
+                    BS_FLAT
+    LTEXT           "Start",IDC_STATIC,18,65,19,10
+    LTEXT           "X",IDC_STATIC,41,65,8,10
+    EDITTEXT        IDC_MERGEMAP_REGION_SX,51,63,27,12,ES_AUTOHSCROLL
+    LTEXT           "Z",IDC_STATIC,90,65,8,10
+    EDITTEXT        IDC_MERGEMAP_REGION_SZ,100,62,27,12,ES_AUTOHSCROLL
+    LTEXT           "End",IDC_STATIC,18,80,19,10
+    LTEXT           "X",IDC_STATIC,41,80,8,10
+    EDITTEXT        IDC_MERGEMAP_REGION_EX,51,78,27,12,ES_AUTOHSCROLL
+    LTEXT           "Z",IDC_STATIC,90,80,8,10
+    EDITTEXT        IDC_MERGEMAP_REGION_EZ,100,78,27,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Merge",IDC_MERGEMAP_MERGE,25,107,40,13
+    PUSHBUTTON      "Cancel",IDCANCEL,80,107,40,13
+END
+
+IDD_FILE_REMOVE_OBJS DIALOGEX 0, 0, 131, 78
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION " Remove objects in the region"
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        " Remove objects ",-1,4,4,124,49,BS_FLAT
+    LTEXT           "Start",-1,11,20,19,10
+    LTEXT           "X",-1,34,20,8,10
+    EDITTEXT        IDC_REMOVE_OBJECTS_SX,44,18,27,12,ES_AUTOHSCROLL
+    LTEXT           "Z",-1,83,20,8,10
+    EDITTEXT        IDC_REMOVE_OBJECTS_SZ,93,17,27,12,ES_AUTOHSCROLL
+    LTEXT           "End",-1,11,35,19,10
+    LTEXT           "X",-1,34,35,8,10
+    EDITTEXT        IDC_REMOVE_OBJECTS_EX,44,33,27,12,ES_AUTOHSCROLL
+    LTEXT           "Z",-1,83,35,8,10
+    EDITTEXT        IDC_REMOVE_OBJECTS_EZ,93,33,27,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Remove",IDC_REMOVE_OBJECTS,42,60,51,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_FILE_NEWTERRAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 203
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_FILE_MERGE_MAPS, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_FILE_REMOVE_OBJS, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 73
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOL_TEXTURE_PAINT  BITMAP  DISCARDABLE     "res\\tool_tex.bmp"
+IDB_TOOL_VERTEX_EDIT    BITMAP  DISCARDABLE     "res\\tool_ver.bmp"
+IDB_TOOL_OBJECT_EDIT    BITMAP  DISCARDABLE     "res\\tool_obj.bmp"
+IDB_FILE_NONEPREVIEW    BITMAP  DISCARDABLE     "res\\file_nop.bmp"
+IDB_TOOL_ATTMAP_EDIT    BITMAP  DISCARDABLE     "res\\tool_att.bmp"
+IDB_TOOL_LIGHT_EDIT     BITMAP  DISCARDABLE     "res\\tool_lig.bmp"
+IDB_TOOL_SHOW_ICON      BITMAP  DISCARDABLE     "res\\tool_sho.bmp"
+IDB_TOOL_HIDE_ICON      BITMAP  DISCARDABLE     "res\\tool_hid.bmp"
+IDB_TOOL_LAYER1         BITMAP  DISCARDABLE     "res\\tool_lay1.bmp"
+IDB_TOOL_LAYER2         BITMAP  DISCARDABLE     "res\\tool_lay2.bmp"
+IDB_TOOL_LAYER3         BITMAP  DISCARDABLE     "res\\tool_lay3.bmp"
+IDB_TOOL_LAYER1_ON      BITMAP  DISCARDABLE     "res\\tool_lay1_on.bmp"
+IDB_TOOL_LAYER2_ON      BITMAP  DISCARDABLE     "res\\tool_lay2_on.bmp"
+IDB_TOOL_LAYER3_ON      BITMAP  DISCARDABLE     "res\\tool_lay3_on.bmp"
+IDB_TOOL_PENCIL         BITMAP  DISCARDABLE     "res\\tool_pen.bmp"
+IDB_TOOL_BRUSH          BITMAP  DISCARDABLE     "res\\tool_bru.bmp"
+IDB_TOOL_PAINT          BITMAP  DISCARDABLE     "res\\tool_pai.bmp"
+IDB_TOOL_ERASE          BITMAP  DISCARDABLE     "res\\tool_era.bmp"
+IDB_TOOL_PAINT_ON       BITMAP  DISCARDABLE     "res\\tool_pai_on.bmp"
+IDB_TOOL_ERASE_ON       BITMAP  DISCARDABLE     "res\\tool_era_on.bmp"
+IDB_TOOL_RAISE          BITMAP  DISCARDABLE     "res\\tool_rai.bmp"
+IDB_TOOL_RAISE_ON       BITMAP  DISCARDABLE     "res\\tool_rai_on.bmp"
+IDB_TOOL_LOWER          BITMAP  DISCARDABLE     "res\\tool_low.bmp"
+IDB_TOOL_LOWER_ON       BITMAP  DISCARDABLE     "res\\tool_low_on.bmp"
+IDB_TOOL_FLATTEN        BITMAP  DISCARDABLE     "res\\tool_fla.bmp"
+IDB_TOOL_FLATTEN_ON     BITMAP  DISCARDABLE     "res\\tool_fla_on.bmp"
+IDB_TOOL_SMOOTH         BITMAP  DISCARDABLE     "res\\tool_smo.bmp"
+IDB_TOOL_SMOOTH_ON      BITMAP  DISCARDABLE     "res\\tool_smo_on.bmp"
+IDB_TOOL_TILE           BITMAP  DISCARDABLE     "res\\tool_til.bmp"
+IDB_TOOL_TILE_ON        BITMAP  DISCARDABLE     "res\\tool_til_on.bmp"
+IDB_TOOL_VERTEX         BITMAP  DISCARDABLE     "res\\tool_vert.bmp"
+IDB_TOOL_VERTEX_ON      BITMAP  DISCARDABLE     "res\\tool_vert_on.bmp"
+IDB_TOOL_RAISEALL       BITMAP  DISCARDABLE     "res\\tool_rai_all.bmp"
+IDB_TOOL_LOWERALL       BITMAP  DISCARDABLE     "res\\tool_low_all.bmp"
+IDB_TOOL_LIGHT_CONTROL  BITMAP  DISCARDABLE     "res\\tool_lig_control.bmp"
+IDB_TOOL_LIGHT_CONTROL_ON BITMAP  DISCARDABLE     "res\\tool_lig_control_on.bmp"
+IDB_NAKO_ICON           BITMAP  DISCARDABLE     "res\\nako_ico.bmp"
+IDB_TOOL_PAINT_S        BITMAP  DISCARDABLE     "res\\tool_pai_s.bmp"
+IDB_TOOL_PAINT_ON_S     BITMAP  DISCARDABLE     "res\\tool_pai_on_s.bmp"
+IDB_TOOL_ERASE_S        BITMAP  DISCARDABLE     "res\\tool_era_s.bmp"
+IDB_TOOL_ERASE_ON_S     BITMAP  DISCARDABLE     "res\\tool_era_on_s.bmp"
+IDB_TOOL_ATMOS_EDIT     BITMAP  DISCARDABLE     "res\\tool_atm.bmp"
+IDB_TOOL_SELECT         BITMAP  DISCARDABLE     "res\\tool_sel.bmp"
+IDB_TOOL_SELECT_ON      BITMAP  DISCARDABLE     "res\\tool_sel_on.bmp"
+IDB_TOOL_PLACE          BITMAP  DISCARDABLE     "res\\tool_pla.bmp"
+IDB_TOOL_PLACE_ON       BITMAP  DISCARDABLE     "res\\tool_pla_on.bmp"
+IDB_TOOL_MOVE           BITMAP  DISCARDABLE     "res\\tool_move.bmp"
+IDB_TOOL_MOVE_ON        BITMAP  DISCARDABLE     "res\\tool_move_on.bmp"
+IDB_TOOL_ROTATE         BITMAP  DISCARDABLE     "res\\tool_rot.bmp"
+IDB_TOOL_ROTATE_ON      BITMAP  DISCARDABLE     "res\\tool_rot_on.bmp"
+IDB_TOOL_ALIGN          BITMAP  DISCARDABLE     "res\\tool_align.bmp"
+IDB_TOOL_ARRAY          BITMAP  DISCARDABLE     "res\\tool_array.bmp"
+IDB_TOOL_WATER          BITMAP  DISCARDABLE     "res\\tool_wat.bmp"
+IDB_TOOL_WAVE           BITMAP  DISCARDABLE     "res\\tool_wav.bmp"
+IDB_TOOL_WATER_ON       BITMAP  DISCARDABLE     "res\\tool_wat_on.bmp"
+IDB_TOOL_WAVE_ON        BITMAP  DISCARDABLE     "res\\tool_wav_on.bmp"
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 221, 354
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " About NKMapTool"
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         184,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,7,
+                    11,19,23
+    LTEXT           "NKMapTool Version 1.1",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003      Nako Interactive",IDC_STATIC,39,
+                    22,123,8
+    DEFPUSHBUTTON   "OK",IDOK,164,7,50,14,WS_GROUP
+    LTEXT           "Revision : Nam Woo Hyun",IDC_STATIC,39,35,129,8
+    LTEXT           "Ver 1.1 Open Game Map 버그수정",IDC_STATIC,12,66,131,8
+    GROUPBOX        "버전 관리",IDC_STATIC,7,56,207,291
+    LTEXT           "일부 차일드 다이얼로그  버튼 단축키 기능 추가 (오브젝트 다이얼로그 4버튼, 텍스쳐 페인트 다이얼로그 2버튼)",
+                    IDC_STATIC,15,91,187,19
+    LTEXT           "오브젝트 좌표축 로컬모드 셋팅 기능(회전에 따라 함께 돌아감) 로컬모드 좌표축으로 Array기능 강화 ",
+                    IDC_STATIC,16,126,184,19
+    LTEXT           "Ver 1.2",IDC_STATIC,12,79,23,8
+    LTEXT           "Ver 1.3",IDC_STATIC,13,113,23,8
+    LTEXT           "Ver 1.4",IDC_STATIC,13,149,23,8
+    LTEXT           "속성 브러쉬 크기 확장 기능 추가(마우스휠로도 조절 가능)",
+                    IDC_STATIC,16,161,170,8
+    LTEXT           "방향키 카메라 이동 속도 조절 기능 확장(단축키 Ctrl + 1,2,3으로도 조절 가능)",
+                    IDC_STATIC,16,172,179,17
+    LTEXT           "텍스쳐 페인트 다이얼로그의 레이어 버튼의 위치 변경(1번과 3번의 순서를 변경)",
+                    IDC_STATIC,16,191,179,17
+    LTEXT           "Ver 1.5",IDC_STATIC,14,211,23,8
+    LTEXT           "오브젝트 셀렉트 기능을 조금도 잘되게 변경.(세세한 체크를 안하게 변경)",
+                    IDC_STATIC,16,222,182,17
+    LTEXT           "Ver 1.6",IDC_STATIC,15,242,23,8
+    LTEXT           "카메라 이동속도 조절기능에 x8,x10 추가",IDC_STATIC,17,
+                    253,120,8
+    LTEXT           "Ver 1.7",IDC_STATIC,16,266,23,8
+    LTEXT           "오브젝트가 보이는 카메라 시야 거리 증가(반투명 출력 체크거리도 증가)",
+                    IDC_STATIC,19,276,189,20
+    LTEXT           "Ver 1.8",IDC_STATIC,14,298,23,8
+    LTEXT           "속성맵 보기 옵션 추가",IDC_STATIC,17,309,68,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 347
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\NKMapTool.ico"
+IDR_NKMAPTTYPE          ICON    DISCARDABLE     "res\\NKMapToolDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  32, 31
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_TOOL_VERTEX_EDIT_ICON
+    BUTTON      ID_TOOL_TEXTURE_PAINT_ICON
+    BUTTON      ID_TOOL_OBJECT_EDIT_ICON
+    BUTTON      ID_TOOL_LIGHT_EDIT_ICON
+    BUTTON      ID_TOOL_ATMOS_EDIT_ICON
+    BUTTON      ID_TOOL_ATTRIBUTE_EDIT_ICON
+    SEPARATOR
+    BUTTON      ID_TOOL_MAPMOVE_ICON
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "Open &Game Map",              ID_FILE_OPEN_GAME_MAP
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "Save &Game Map",              ID_FILE_SAVE_GAME_MAP
+        MENUITEM SEPARATOR
+        MENUITEM "&Merge Map",                  ID_FILE_MERGE_MAP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Terrain\tT",                 ID_VIEW_TERRAIN
+        MENUITEM "&Object\tO",                  ID_VIEW_OBJECT
+        MENUITEM "&Water\tW",                   ID_VIEW_WATER
+        MENUITEM "&Sky\tS",                     ID_VIEW_SKY
+        MENUITEM "&Fog\tF",                     ID_VIEW_FOG
+        MENUITEM "&Character\tK",               ID_VIEW_CHARACTER
+        MENUITEM "Attr_map\tA",                 ID_VIEW_ATTR_MAP
+        POPUP "&Grid\tG"
+        BEGIN
+            MENUITEM "&None",                       ID_VIEW_GRID_NONE
+            MENUITEM "&Small",                      ID_VIEW_GRID_SMALL
+            MENUITEM "&Medium",                     ID_VIEW_GRID_MEDIUM
+            MENUITEM "&Large",                      ID_VIEW_GRID_LARGE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Too&lbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "St&atus Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Terrain &Vertex Editor\tCtrl+V", ID_TOOL_VERTEX_EDIT
+        MENUITEM "Terrain &Texture Paintor\tCtrl+T", ID_TOOL_TEXTURE_PAINT
+        MENUITEM "O&bject Editor\tCtrl+B",      ID_TOOL_OBJECT_EDIT
+        MENUITEM "Terrain &Light Editor\tCtrl+L", ID_TOOL_LIGHT_EDIT
+        MENUITEM "Atmos&phere Editor\tCtrl+P",  ID_TOOL_ATMOSPHERE_EDIT
+        MENUITEM "Terrain &Attribute Map Editor\tCtrl+A", 
+                                                ID_TOOL_ATTRIBUTE_EDIT
+        MENUITEM SEPARATOR
+        MENUITEM "Map &Movement\tCtrl+M",       ID_TOOL_MAPMOVE
+    END
+    POPUP "&Camera"
+    BEGIN
+        POPUP "&Type\tC"
+        BEGIN
+            MENUITEM "&Observing Mode",             ID_CAMERA_OBSERVE
+            MENUITEM "&Flying Mode",                ID_CAMERA_FLY
+        END
+        POPUP "Speed"
+        BEGIN
+            MENUITEM "x1",                          ID_CAMERA_SPEED1X
+            MENUITEM "x2",                          ID_CAMERA_SPEED2X
+            MENUITEM "x4",                          ID_CAMERA_SPEED4X
+            MENUITEM "x8",                          ID_CAMERA_SPEED8X
+            MENUITEM "x10",                         ID_CAMERA_SPEED10X
+        END
+        MENUITEM "Unlimit",                     ID_CAMERA_UNLIMIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About NKMapTool...",         ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "1",            ID_CAMERA_SPEED1X,      VIRTKEY, CONTROL, NOINVERT
+    "2",            ID_CAMERA_SPEED2X,      VIRTKEY, CONTROL, NOINVERT
+    "3",            ID_CAMERA_SPEED4X,      VIRTKEY, CONTROL, NOINVERT
+    "4",            ID_CAMERA_SPEED8X,      VIRTKEY, CONTROL, NOINVERT
+    "5",            ID_CAMERA_SPEED10X,     VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_TOOL_ATTRIBUTE_EDIT, VIRTKEY, CONTROL, NOINVERT
+    "B",            ID_TOOL_OBJECT_EDIT,    VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_HOTKEY_E,            VIRTKEY, NOINVERT
+    "L",            ID_TOOL_LIGHT_EDIT,     VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_TOOL_MAPMOVE,        VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_TOOL_ATMOSPHERE_EDIT, VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_HOTKEY_Q,            VIRTKEY, NOINVERT
+    "R",            ID_HOTKEY_R,            VIRTKEY, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_TOOL_TEXTURE_PAINT,  VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_TOOL_VERTEX_EDIT,    VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "W",            ID_HOTKEY_W,            VIRTKEY, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "NKMapTool MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "NKMapTool\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "NKMapTool.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "NKMapTool Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "NKMapTool\n\nNKMapT\n\n\nNKMapTool.Document\nNKMapT Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "NKMapTool"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    ID_INDICATOR_FPS        "FPS : 0000"
+    ID_INDICATOR_TRIS       "Tris : 00000[Ter], 00000[Obj]"
+    ID_INDICATOR_SIZE       "0000x0000"
+    ID_INDICATOR_COPYRIGHT  " (C) NAKO "
+    ID_INDICATOR_TIME       "World Time : 29h"
+    ID_INDICATOR_COORD      "Coord : (000,000)[Tile], (00000.000,00000.000)[World]"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TERRAIN         "Show the terrain\nShow Terrain"
+    ID_VIEW_OBJECT          "Show the object\nShow Object"
+    ID_VIEW_FOG             "Show the fog\nShow Fog"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_SKY             "Show the sky\nShow Sky"
+    ID_VIEW_LIGHT           "Turn on/off the light\nLight On/Off"
+    ID_VIEW_GRID_NONE       "Hide the grid\nHide Grid"
+    ID_VIEW_GRID_SMALL      "Show the small grid\nShow Small Grid"
+    ID_VIEW_GRID_MEDIUM     "Show the medium grid\nShow Medium Grid"
+    ID_VIEW_GRID_LARGE      "Show the large grid\nShow Large Grid"
+    ID_TOOL_ATTRIBUTE_EDIT_ICON "Edit attribute map\nEdit Attribute Map"
+    ID_TOOL_ATTRIBUTE_EDIT  "Edit attribute map\nEdit Attribute Map"
+    ID_TOOL_LIGHT_EDIT      "Edit terrain lights\nEdit Terrain Light"
+    ID_TOOL_LIGHT_EDIT_ICON "Edit terrain lights\nEdit Terrain Light"
+    ID_VIEW_CHARACTER       "Show the character\nShow Character"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOL_VERTEX_EDIT     "Edit terrain vertices\nEdit Terrain Vertex"
+    ID_TOOL_VERTEX_EDIT_ICON "Edit terrain vertices\nEdit Terrain Vertex"
+    ID_TOOL_TEXTURE_PAINT   "Paint terrain textures\nPaint Terrain Texture"
+    ID_TOOL_TEXTURE_PAINT_ICON "Paint terrain textures\nPaint Terrain Texture"
+    ID_TOOL_OBJECT_EDIT     "Edit objects\nEdit Object"
+    ID_TOOL_OBJECT_EDIT_ICON "Edit objects\nEdit Object"
+    ID_TOOL_ATMOSPHERE_EDIT "Edit the atmosphere\nEdit Atmosphere"
+    ID_TOOL_ATMOS_EDIT_ICON "Edit the atmosphere\nEdit Atmosphere"
+    ID_FILE_OPEN_GAME_MAP   "Open the map for the game\nOpen Game Map"
+    ID_FILE_SAVE_GAME_MAP   "Save the map for the game\nSave Game Map"
+    ID_FILE_MERGE_MAP       "Merge two maps\nMerge Map"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\NKMapTool.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

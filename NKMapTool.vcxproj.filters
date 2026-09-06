@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0ab2eaeb-7c89-4a9c-91aa-e0eb4e9b4f91}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{85fb8184-b1b7-4450-8c87-92cc0d05d9c9}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm</Extensions>
+    </Filter>
+    <Filter Include="Inline Files">
+      <UniqueIdentifier>{e477906e-3e7a-42ad-9941-dd968c872bb3}</UniqueIdentifier>
+      <Extensions>inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{19435c96-0a7e-4496-a0f7-ad904f5da1d5}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CapSyong.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="d3dapp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="d3denum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="d3dframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="d3dmath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="d3dutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DecoObj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileMergeMaps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileNewTerrainDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexedTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LightCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyFileDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyNKApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NKCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NkCharacter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NKMapTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NKMapToolDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NKMapToolView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NKMath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NKObjQuadNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NKTerQuadNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NKTerrain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NKVertexType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PageCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowRect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SizeCBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyPlane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolAtmosEditPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolAttrEditPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolCtrlBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolLightEditPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolMapMoveDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolObjectRemoveRegion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolObjEditPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolTexPaintListBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolTexPaintPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolVertEditPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UNDO_Object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NKMapTool.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CapSyong.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChaSta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dapp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3denum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dmath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dres.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DecoObj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileMergeMaps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileNewTerrainDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexedTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LightCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyFileDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyNKApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NKCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NkCharacter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NKMapTool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NKMapToolDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NKMapToolView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NKMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NKObjQuadNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NKRTLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NKTerQuadNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NKTerrain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NKVertexType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PageCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowRect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SizeCBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyPlane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolAtmosEditPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolAttrEditPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolCtrlBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolLightEditPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolMapMoveDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolObjectRemoveRegion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolObjEditPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolTexPaintListBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolTexPaintPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolVertEditPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Undo_Object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MyNKApp.inl">
+      <Filter>Inline Files</Filter>
+    </None>
+    <None Include="NKCamera.inl">
+      <Filter>Inline Files</Filter>
+    </None>
+    <None Include="NKMath.inl">
+      <Filter>Inline Files</Filter>
+    </None>
+    <None Include="NKObjQuadNode.inl">
+      <Filter>Inline Files</Filter>
+    </None>
+    <None Include="NKTerQuadNode.inl">
+      <Filter>Inline Files</Filter>
+    </None>
+    <None Include="NKTerrain.inl">
+      <Filter>Inline Files</Filter>
+    </None>
+    <None Include="NKVertexType.inl">
+      <Filter>Inline Files</Filter>
+    </None>
+    <None Include="res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\file_nop.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\mainfram.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\nako_ico.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\NKMapTool.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\NKMapTool.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\NKMapToolDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_align.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_array.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_atm.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_att.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_bru.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_era.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_era_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_era_on_s.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_era_s.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_fla.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_fla_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_hid.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_lay1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_lay1_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_lay2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_lay2_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_lay3.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_lay3_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_lig.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_lig_control.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_lig_control_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_low.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_low_all.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_low_all_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_low_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_mov.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_mov_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_move.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_move_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_obj.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_pai.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_pai_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_pai_on_s.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_pai_s.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_pen.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_pla.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_pla_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_rai.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_rai_all.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_rai_all_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_rai_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_rot.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_rot_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_sel.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_sel_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_sho.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_smo.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_smo_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_tex.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_til.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_til_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_ver.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_vert.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_vert_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_wat.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_wat_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_wav.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tool_wav_on.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
